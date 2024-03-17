@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TECHPOSTER</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/11b3c4941e.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <nav>
+  <body class="bg-gray-200">
+    <nav class="flex items-center justify-between">
       <div class="logo">
         <h1>TECHPOSTER</h1>
       </div>
@@ -22,7 +23,9 @@
         </div>
         <div class="links">
           <a href="">help <i class="fa-solid fa-circle-info"></i></a>
-          <a href="" onclick="showMenu()">Account <i class="fa-solid fa-user"></i></a>
+          <a href="" onclick="showMenu()"
+            >Account <i class="fa-solid fa-user"></i
+          ></a>
         </div>
       </div>
 
@@ -30,15 +33,15 @@
         <i class="fa-solid fa-bars" onclick="showSubMenu()"></i>
       </div>
 
-    <div class="menu hide">
-      <a href="">login <i class="fa-solid fa-right-to-bracket"></i></a>
-      <a href="">register</a>
-    </div>
+      <div class="menu hide">
+        <a href="">login <i class="fa-solid fa-right-to-bracket"></i></a>
+        <a href="">register</a>
+      </div>
     </nav>
     <div class="nav-2">
       <ul>
         <li>
-          <a href="" style="text-transform: capitalize;">dashboard</a>
+          <a href="" style="text-transform: capitalize">dashboard</a>
           <div id="submenu">
             <ul>
               <li>
@@ -54,7 +57,7 @@
           </div>
         </li>
         <li>
-          <a href=""style="text-transform: capitalize;">jobs</a>
+          <a href="" style="text-transform: capitalize">jobs</a>
           <div id="submenu">
             <ul>
               <li>
@@ -70,7 +73,7 @@
           </div>
         </li>
         <li>
-          <a href=""style="text-transform: capitalize;">courses</a>
+          <a href="" style="text-transform: capitalize">courses</a>
           <div id="submenu">
             <ul>
               <li>
@@ -88,7 +91,239 @@
       </ul>
     </div>
 
-    <footer>
+    <section class="px-[5%] py-8">
+      <div class="mx-auto text-center">
+        <h1 class="text-[40px] font-bold">Find your dream jobs in Kenya</h1>
+        <p class="text-gray-500 text-sm">
+          When you are searching for a job there are a few things you can do
+          <br />
+          to get the most out of your search
+        </p>
+        <div class="w-[400px] mx-auto mt-5 relative">
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-[10px] top-2 text-lg"
+          ></i>
+          <input
+            type="text"
+            class="w-full px-[50px] py-[10px] border-2 border-black"
+            placeholder="Job title or keyword"
+          />
+          <div
+            class="flex items-center gap-3 bg-gray-100 w-fit py-1 px-3 h-[35px] rounded-[40px] absolute right-3 top-[4px]"
+          >
+            <i class="fa-solid fa-map text-xs"></i>
+            <p class="text-xs">Any location</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-[80px] px-[5%] flex justify-between w-full items-center">
+        <div>
+          <h3 class="font-bold text-lg">Recommended Jobs</h3>
+          <p class="text-gray-500 text-sm mt-[10px]">
+            Explore suggested job searches
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button
+            class="py-2 px-[20px] bg-black text-white font-semibold rounded-[40px] text-sm"
+          >
+            Liked jobs
+          </button>
+          <button
+            class="py-2 px-[20px] bg-white font-semibold rounded-[40px] text-sm"
+          >
+            Saved jobs
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-[80px] flex justify-between w-full px-[5%]">
+        <div class="w-[300px] ">
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2"
+          >
+            <p class="font-bold text-[30px]">Job Categories</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2"
+          >
+            <p class="text-[20px] font-semibold">Automotive</p>
+            <p class="text-xs text-gray-500">2 openings</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2"
+          >
+            <p class="text-[20px] font-semibold">Health and care</p>
+            <p class="text-xs text-gray-500">1 opening</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2"
+          >
+            <p class="text-[20px] font-semibold">Construction</p>
+            <p class="text-xs text-gray-500">2 openings</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2"
+          >
+            <p class="text-[20px] font-semibold">Fitness Trainer</p>
+            <p class="text-xs text-gray-500">1 opening</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2"
+          >
+            <p class="text-[20px] font-semibold">Industry</p>
+            <p class="text-xs text-gray-500">0 opening</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2"
+          >
+            <p class="text-[20px] font-semibold">Automotive</p>
+            <p class="text-xs text-gray-500">3 opening</p>
+          </div>
+        </div>
+        <div class="w-[600px]">
+          <div class="border-l-red-600 border-l-4 rounded-[20px] mb-2 mb-2">
+            <div>
+              <div class="bg-white p-5 rounded-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex justify-between bg-red">
+                    <p class="text-[14px] text-gray-500 mr-9">Type: Temporary</p>
+                    <p class="text-[14px] text-gray-500">Time: 4 years ago</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <p class="text-[20px] font-semibold">Project manager</p>
+                  <p class="text-[13px] text-gray-500">&euro; 2000 - 4000 / Yearly</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between w-full bg-red-100 p-6 rounded-b-[10px]">
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Germany</p>
+                </div>
+                <div class="border-l-[3px] border-red-500 pl-[20px]">
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Construction</p>
+                </div>
+              </div>
+              <div>
+                <a href="" class="px-8 py-2 text-sm font-semibold bg-white rounded-[40px] shadow-md">Apply Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="border-l-red-600 border-l-4 rounded-[20px] mb-2">
+            <div>
+              <div class="bg-white p-5 rounded-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex justify-between bg-red">
+                    <p class="text-[14px] text-gray-500 mr-9">Type: Temporary</p>
+                    <p class="text-[14px] text-gray-500">Time: 4 years ago</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <p class="text-[20px] font-semibold">Project manager</p>
+                  <p class="text-[13px] text-gray-500">&euro; 2000 - 4000 / Yearly</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between w-full bg-red-100 p-6 rounded-b-[10px]">
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Germany</p>
+                </div>
+                <div class="border-l-[3px] border-red-500 pl-[20px]">
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Construction</p>
+                </div>
+              </div>
+              <div>
+                <a href="" class="px-8 py-2 text-sm font-semibold bg-white rounded-[40px] shadow-md">Apply Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="border-l-red-600 border-l-4 rounded-[20px] mb-2">
+            <div>
+              <div class="bg-white p-5 rounded-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex justify-between bg-red">
+                    <p class="text-[14px] text-gray-500 mr-9">Type: Temporary</p>
+                    <p class="text-[14px] text-gray-500">Time: 4 years ago</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <p class="text-[20px] font-semibold">Project manager</p>
+                  <p class="text-[13px] text-gray-500">&euro; 2000 - 4000 / Yearly</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between w-full bg-red-100 p-6 rounded-b-[10px]">
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Germany</p>
+                </div>
+                <div class="border-l-[3px] border-red-500 pl-[20px]">
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Construction</p>
+                </div>
+              </div>
+              <div>
+                <a href="" class="px-8 py-2 text-sm font-semibold bg-white rounded-[40px] shadow-md">Apply Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="border-l-red-600 border-l-4 rounded-[20px] mb-2">
+            <div>
+              <div class="bg-white p-5 rounded-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex justify-between bg-red">
+                    <p class="text-[14px] text-gray-500 mr-9">Type: Temporary</p>
+                    <p class="text-[14px] text-gray-500">Time: 4 years ago</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <p class="text-[20px] font-semibold">Project manager</p>
+                  <p class="text-[13px] text-gray-500">&euro; 2000 - 4000 / Yearly</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between w-full bg-red-100 p-6 rounded-b-[10px]">
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Germany</p>
+                </div>
+                <div class="border-l-[3px] border-red-500 pl-[20px]">
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Construction</p>
+                </div>
+              </div>
+              <div>
+                <a href="" class="px-8 py-2 text-sm font-semibold bg-white rounded-[40px] shadow-md">Apply Now</a>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- <footer>
       <div class="footer-container">
         <div class="contact">
           <p>Email<i class="fa-solid fa-envelope"></i>: techposter@gmail.com</p>
@@ -104,8 +339,8 @@
       <div class="copyright">
         <small>&copy;Techposter Inc.2024 <br> All Rights Reserved</small>
       </div>
-    </footer>
+    </footer> -->
 
-  <script src="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
