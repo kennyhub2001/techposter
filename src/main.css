@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+
+body {
     background-color: #fafafa;
 }
-nav{
+
+nav {
     background: #000;
     color: white;
     width: 100%;
@@ -20,12 +22,12 @@ nav{
     z-index: 1000000000;
 }
 
-.searchbar{
+.searchbar {
     position: relative;
-    height: 35px;
+    height: 30px;
 }
 
-input{
+input {
     width: 100%;
     padding: 10px;
     padding-left: 30px;
@@ -33,25 +35,27 @@ input{
     outline: none;
 }
 
-.searchbar i{
+.searchbar i {
     position: absolute;
     color: #000;
     top: 10px;
     left: 5px;
     font-size: 18px;
 }
-.links{
+
+.links {
     display: flex;
     gap: 30px;
 }
-.links a{
+
+.links a {
     color: white;
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
 }
 
-.nav-2{
+.nav-2 {
     background: white;
     color: black;
     display: flex;
@@ -62,56 +66,57 @@ input{
     align-items: center;
 }
 
-#submenu{
+#submenu {
     margin-left: 50px;
 }
 
-.nav-2 p{
+.nav-2 p {
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.nav-2 ul{
+.nav-2 ul {
     list-style: none;
 }
 
-.nav-2 ul li{
+.nav-2 ul li {
     display: inline-block;
     position: relative;
 }
 
-.nav-2 ul li a{
+.nav-2 ul li a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: black;
 }
 
-#submenu{
+#submenu {
     display: none;
     position: absolute;
     background: white;
     border: 1px solid #ccc;
 }
 
-#submenu ul{
+#submenu ul {
     list-style: none;
     width: 300px;
     display: flex;
     flex-direction: column;
 }
 
-.nav-2 ul li:hover #submenu{
+.nav-2 ul li:hover #submenu {
     display: block;
 }
 
-.nav-2 #submenu li a{
+.nav-2 #submenu li a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: #000;
 }
-.menu{
+
+.menu {
     width: 250px;
     background: white;
     position: absolute;
@@ -119,84 +124,98 @@ input{
     top: 100%;
     z-index: 10000;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.menu a{
+
+.menu a {
     display: block;
     margin: 20px;
     text-decoration: none;
     color: grey;
     text-transform: capitalize;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: #000;
 }
 
-footer{
+footer {
     padding: 8px 5%;
     background: #000;
     color: #fff;
     width: 100%;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
 }
 
-.contact, .socials{
+.contact,
+.socials {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.copyright{
+.copyright {
     text-align: center;
 }
 
-small{
+small {
     color: gray;
     font-size: 13px;
 }
 
-.second-nav{
+.second-nav {
     display: flex;
     justify-content: space-between;
     width: 700px;
     align-items: center;
 }
 
-.hamburger i{
+.hamburger i {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
+.upper {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 @media (max-width:768px) {
-    .hamburger{
+    .hamburger {
         display: block;
     }
-    .footer-container{
+
+    .footer-container {
         flex-direction: column;
         gap: 30px;
     }
-    .socials{
+
+    .socials {
         flex-direction: row;
     }
-    .contact{
+
+    .contact {
         text-align: center;
     }
-    .copyright{
+
+    .copyright {
         margin-top: 50px;
     }
-    .second-nav{
+
+    .second-nav {
         position: absolute;
         z-index: 10000000;
         top: -150px;
@@ -210,52 +229,62 @@ small{
         flex-direction: column;
         transition: all .3s;
     }
-    .links{
+
+    .links {
         flex-direction: column;
         gap: 10px;
         text-align: center;
         margin-top: 10px;
         color: #000;
     }
+
     .searchbar {
         width: 100%;
         outline: 2px solid black;
         border-radius: 40px;
     }
-    .links a{
+
+    .links a {
         color: #000;
         font-size: 14px;
     }
-    .submenu{
+
+    .submenu {
         display: none;
     }
 
-    .jobs{
+    .jobs {
         width: 100%;
     }
-    .recommended{
+
+    .recommended {
         width: 100%;
         background: white;
         padding: 20px;
         border-radius: 70px;
     }
-    .h3{
+
+    .h3 {
         font-size: 18px;
     }
-    .btn-2{
+
+    .btn-2 {
         background: rgb(192, 192, 192);
     }
-    .recommended p{
+
+    .recommended p {
         font-size: 13px;
         font-weight: bold;
         margin-top: -5px;
         align-items: first baseline;
     }
-    button{
+
+    button {
         width: 100px;
         font-size: 10px;
     }
-    .first{
+
+    .first {
         display: flex;
         flex-direction: column;
         gap: 0;
