@@ -7,6 +7,7 @@
     <title>Sign Up | TechPoster</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="new.css">
     <script src="https://kit.fontawesome.com/b052718160.js" crossorigin="anonymous"></script>
 
     <style>
@@ -68,44 +69,37 @@
                 <img src="assets/undraw_job_hunt_re_q203.svg" alt="" class="object-cover m-auto mt-[100px]"
                     width="250px">
             </div>
-            <div class="w-[450px] bg-black px-[30px] py-[20px] form">
+            <div class="w-[450px] px-[30px] py-[20px] form">
 
-                <div class="flex flex-col gap-[8px]">
-                    <h1 class="text-white text-2xl">Welcome to TechPoster</h1>
-                    <p class="text-gray-500 text-sm">Create your account</p>
-                </div>
-                <div class="flex flex-col gap-3">
-                    <div class="mb-3 flex flex-col w-full ">
-                        <label for="" class="text-md text-white">Name</label>
-                        <input type="text" required class="p-1 outline-2 outline-black ">
-                    </div>
-                    <div class="mb-3 flex flex-col w-full ">
-                        <label for="" class="text-md text-white">Email</label>
-                        <input type="email" required class="p-1 outline-2 outline-black ">
-                    </div>
-                    <div class="mb-3 flex flex-col w-full ">
-                        <label for="" class="text-md text-white">Password</label>
-                        <input type="password" required class="p-1 outline-2 outline-black ">
-                    </div>
-                </div>
-                <div class="mt-3 text-center">
-                    <a href="" class="py-3 px-9 bg-white text-black capitalize rounded-[40px] shadow-lg">login</a>
-                </div>
-                <div class="mt-6 flex items-center gap-4 justify-center mb-3">
-                    <p class="text-gray-500 text-sm">Create account with</p>
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-brands fa-instagram text-lg  bg-transparent text-white"></i>
-                        <i class="fa-brands fa-linkedin text-lg  bg-transparent text-white"></i>
-                        <i class="fa-brands fa-google text-lg  bg-transparent text-white"></i>
-                        <i class="fa-brands fa-github text-lg  bg-transparent text-white"></i>
-                    </div>
-                </div>
-                <div class="flex gap-1 items-center justify-center">
-                    <p class="text-gray-500 text-xs font-semibold">Already have an account?</p>
-                    <a href="" class="text-white text-xs underline capitalize">sign
-                        in</a>
-                </div>
-            </div>
+                <div class="form-box register mx-auto">
+                    <h2>Registration</h2>
+                    <form action="#">
+                      <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                       <input type="text" required>
+                       <label>Username</label> 
+                      </div>
+                      <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                       <input type="email" required>
+                       <label>Email</label> 
+                      </div>
+                      <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                       <input type="password" required>
+                       <label>Password</label> 
+                      </div>
+                      <div class="remember-forgot">
+                        <label><input type="checkbox">
+                        </label>
+                        <span class="checkboxtext">I agree to terms & conditions</span>
+                      </div>
+                      <button type="submit" class="btn"> Register</button>
+                      <div class="login-register">
+                        <p>Already have an account?<a href="" class="login-link">Login</a></p>
+                      </div>
+                    </form>
+                  </div>
         </div>
     </section>
 
