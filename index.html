@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECHPOSTER</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/11b3c4941e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-200">
+    <nav class="flex items-center justify-between">
+      <div class="logo">
+        <h1>TECHPOSTER </h1>
+      </div>
+      <div class="second-nav reveal">
+        <div class="searchbar">
+          <input type="text" placeholder=" Search" id="" />
+        </div>
+        <div class="links">
+          <a href="">help <i class="fa-solid fa-circle-info"></i></a>
+          <a href="" onclick="showMenu()"
+            >Account <i class="fa-solid fa-user"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="hamburger">
+        <i class="fa-solid fa-bars" onclick="showSubMenu()"></i>
+      </div>
+
+      <div class="menu hide">
+        <a href="">login <i class="fa-solid fa-right-to-bracket"></i></a>
+        <a href="">register</a>
+      </div>
+    </nav>
+    <div class="nav-2">
+      <ul>
+        <li>
+          <a href="" style="text-transform: capitalize">dashboard</a>
+          <div id="submenu">
+            <ul>
+              <li>
+                <a href="">upload CV</a>
+              </li>
+              <li>
+                <a href="">resume builder</a>
+              </li>
+              <li>
+                <a href="">application tracking</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="" style="text-transform: capitalize">jobs</a>
+          <div id="submenu">
+            <ul>
+              <li>
+                <a href="">job search</a>
+              </li>
+              <li>
+                <a href="">job posting</a>
+              </li>
+              <li>
+                <a href="">job alert</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="" style="text-transform: capitalize">courses</a>
+          <div id="submenu">
+            <ul>
+              <li>
+                <a href="">course search</a>
+              </li>
+              <li>
+                <a href="">course posting</a>
+              </li>
+              <li>
+                <a href="">course reviews</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <section class="px-[5%] py-8">
+      <div class="mx-auto text-center">
+        <h1 class="text-[40px] font-bold">Find your dream jobs in Kenya</h1>
+        <p class="text-gray-500 text-sm">
+          When you are searching for a job there are a few things you can do
+          <br />
+          to get the most out of your search
+        </p>
+        <div class="w-[400px] mx-auto mt-5 relative">
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-[10px] top-2 text-lg"
+          ></i>
+          <input
+            type="text"
+            class="w-full px-[50px] py-[10px] border-2 border-black"
+            placeholder="Job title or keyword"
+          />
+          <div
+            class="flex items-center gap-3 bg-gray-100 w-fit py-1 px-3 h-[35px] rounded-[40px] absolute right-3 top-[4px]"
+          >
+            <i class="fa-solid fa-map text-xs"></i>
+            <p class="text-xs">Any location</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-[80px] px-[5%] flex justify-between w-full items-center recommended">
+        <div class="first">
+          <h3 class="font-bold text-lg h3">Recommended Jobs</h3>
+          <p class="text-gray-500 text-sm mt-[10px]">
+            Explore suggested job searches
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button
+            class="py-2 px-[20px] bg-black text-white font-semibold rounded-[40px] text-sm"
+          >
+            Liked jobs
+          </button>
+          <button
+            class="py-2 px-[20px] bg-white font-semibold rounded-[40px] text-sm btn-2"
+          >
+            Saved jobs
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-[80px] flex justify-between w-full px-[5%]" id="main-container">
+        <div class="w-[300px] submenu">
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2" id="categories"
+          >
+            <p class="font-bold text-[30px]">Job Categories</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2" id="categories"
+          >
+            <h6 class="text-[20px] font-semibold">S/W Development</p>
+            <p class="text-xs text-gray-500">40 jobs</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2" id="categories"
+          >
+            <p class="text-[20px] font-semibold">Cyber Security</p>
+            <p class="text-xs text-gray-500">14 jobs</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2" id="categories"
+          >
+            <p class="text-[20px] font-semibold">H/W Management</p>
+            <p class="text-xs text-gray-500">19 jobs</p>
+          </div>
+          <div 
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2" id="categories"
+          >
+            <p class="text-[20px] font-semibold">AI & Robotics</p>
+            <p class="text-xs text-gray-500">8 jobs</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2" id="categories"
+          >
+            <p class="text-[20px] font-semibold">Data Science</p>
+            <p class="text-xs text-gray-500">24 jobs</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2" id="categories"
+          >
+            <p class="text-[20px] font-semibold">Telecommunication</p>
+            <p class="text-xs text-gray-500">13 jobs</p>
+          </div>
+          <div
+            class="p-3 w-full bg-white rounded-md flex justify-between items-center mb-2" id="categories"
+          >
+            <p class="text-[20px] font-semibold">Networking</p>
+            <p class="text-xs text-gray-500">34 jobs</p>
+          </div>
+        </div>
+        <div class="w-[600px]">
+          <div class="border-l-red-600 border-l-4 rounded-[20px] mb-2 jobs">
+            <div>
+              <div class="bg-white p-5 rounded-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex justify-between bg-red">
+                    <p class="text-[14px] text-gray-500 mr-9">Type: Permanent </p>
+                    <p class="text-[14px] text-gray-500">Time: 13 hours ago</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <p class="text-[20px] font-semibold">Project manager</p>
+                  <p class="text-[13px] text-gray-500">&euro; 2000 - 4000 / Yearly</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between w-full bg-red-100 p-6 rounded-b-[10px]">
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Mombasa</p>
+                </div>
+                <div class="border-l-[3px] border-red-500 pl-[20px]">
+                  <i class="fa-solid-fa-map"></i>
+                  <p>S/W Development</p>
+                </div>
+              </div>
+              <div>
+                <a href="" class="px-8 py-2 text-sm font-semibold bg-white rounded-[40px] shadow-md">Apply Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="border-l-red-600 border-l-4 rounded-[20px] mb-2 jobs">
+            <div>
+              <div class="bg-white p-5 rounded-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex justify-between bg-red">
+                    <p class="text-[14px] text-gray-500 mr-9">Type: Part-time</p>
+                    <p class="text-[14px] text-gray-500">Time: 1 day ago</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <p class="text-[20px] font-semibold">Data Analyst</p>
+                  <p class="text-[13px] text-gray-500">KES 350,000 monthly</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between w-full bg-red-100 p-6 rounded-b-[10px]">
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Nakuru</p>
+                </div>
+                <div class="border-l-[3px] border-red-500 pl-[20px]">
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Data Science</p>
+                </div>
+              </div>
+              <div>
+                <a href="" class="px-8 py-2 text-sm font-semibold bg-white rounded-[40px] shadow-md">Apply Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="border-l-red-600 border-l-4 rounded-[20px] mb-2 jobs">
+            <div>
+              <div class="bg-white p-5 rounded-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex justify-between bg-red">
+                    <p class="text-[14px] text-gray-500 mr-9">Type: Temporary</p>
+                    <p class="text-[14px] text-gray-500">Time: 3 day ago</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <p class="text-[20px] font-semibold">Front-end Developer</p>
+                  <p class="text-[13px] text-gray-500">KES 150,000 monthly</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between w-full bg-red-100 p-6 rounded-b-[10px]">
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Nairobi</p>
+                </div>
+          
+                <div class="border-l-[3px] border-red-500 pl-[20px]">
+                  <i class="fa-solid-fa-map"></i>
+                  <p>S/W Development</p>
+                </div>
+              </div>
+              <div>
+                <a href="" class="px-8 py-2 text-sm font-semibold bg-white rounded-[40px] shadow-md">Apply Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="border-l-red-600 border-l-4 rounded-[20px] mb-2 jobs">
+            <div>
+              <div class="bg-white p-5 rounded-[20px]">
+                <div class="flex justify-between">
+                  <div class="flex justify-between bg-red">
+                    <p class="text-[14px] text-gray-500 mr-9">Type: Temporary</p>
+                    <p class="text-[14px] text-gray-500">Time: 5 days ago</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="mt-[30px] flex flex-col gap-3">
+                  <p class="text-[20px] font-semibold">Network Administrator</p>
+                  <p class="text-[13px] text-gray-500"> Confidential</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between w-full bg-red-100 p-6 rounded-b-[10px]">
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Nairobi</p>
+                </div>
+                <div class="border-l-[3px] border-red-500 pl-[20px]">
+                  <i class="fa-solid-fa-map"></i>
+                  <p>Networking</p>
+                </div>
+              </div>
+              <div>
+                <a href="" class="px-8 py-2 text-sm font-semibold bg-white rounded-[40px] shadow-md">Apply Now</a>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="contact">
+          <p>Email<i class="fa-solid fa-envelope"></i>: techposter@gmail.com</p>
+          <p>Phone Number <i class="fa-solid fa-phone"></i>: +254759321026</p>
+        </div>
+        <div class="socials">
+          <p>Instagam <i class="fa-brands fa-instagram"></i></p>
+          <p>Twitter <i class="fa-brands fa-x-twitter"></i></p>
+          <p>LinkedIn <i class="fa-brands fa-linkedin"></i></p>
+          <p>Pinterest <i class="fa-brands fa-pinterest"></i></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <small>&copy;Techposter Inc.2024 <br> All Rights Reserved</small>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
