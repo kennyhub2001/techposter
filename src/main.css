@@ -242,6 +242,7 @@ small {
         width: 100%;
         outline: 2px solid black;
         border-radius: 40px;
+        overflow: hidden;
     }
 
     .links a {

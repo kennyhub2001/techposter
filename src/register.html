@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +13,13 @@
         * {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-
         input {
             border-radius: 0;
         }
-
         @media (max-width:768px) {
             .image-c {
                 display: none;
             }
-
             .form {
                 position: absolute;
                 top: 50%;
@@ -33,9 +29,7 @@
         }
     </style>
 </head>
-
 <body class="bg-gray-100">
-
     <nav class="flex items-center justify-between">
         <div class="logo">
             <h1>
@@ -48,61 +42,66 @@
             </div>
             <div class="links">
                 <a href="">help <i class="fa-solid fa-circle-info"></i></a>
-                <a href="" onclick="showMenu()">Account <i class="fa-solid fa-user"></i></a>
             </div>
         </div>
-
         <div class="hamburger">
             <i class="fa-solid fa-bars" onclick="showSubMenu()"></i>
         </div>
-
         <div class="menu hide">
             <a href="">login <i class="fa-solid fa-right-to-bracket"></i></a>
             <a href="">register</a>
         </div>
     </nav>
-
-
     <section class="px-[5%]">
         <div class="w-[900px] grid grid-cols-2 place-items-center mx-auto mt-[30px] cont">
-            <div class="w-[450px] border-black border-2 h-full border-r-black image-c">
+            <div class="w-[450px] border-gray-50 border-2 h-full border-r-gray-50 image-c">
                 <img src="assets/undraw_job_hunt_re_q203.svg" alt="" class="object-cover m-auto mt-[100px]"
                     width="250px">
             </div>
+            <div class="w-[450px] bg-gray-100 px-[30px] py-[20px] form">
             <div class="w-[450px] px-[30px] py-[20px] form">
 
+            </div>
                 <div class="form-box register mx-auto">
-                    <h2>Registration</h2>
+                    <h2>Welcome to TechPoster</h2>
                     <form action="#">
-                      <div class="input-box">
+                        <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-user"></i></span>
-                       <input type="text" required>
-                       <label>Username</label> 
-                      </div>
-                      <div class="input-box">
+                        <input type="text" required>
+                        <label>Username</label> 
+                        </div>
+                        <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                       <input type="email" required>
-                       <label>Email</label> 
-                      </div>
-                      <div class="input-box">
+                        <input type="email" required>
+                        <label>Email</label> 
+                        </div>
+                        <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                       <input type="password" required>
-                       <label>Password</label> 
-                      </div>
-                      <div class="remember-forgot">
+                        <input type="password" required>
+                        <label>Password</label> 
+                        </div>
+                        <div class="remember-forgot">
                         <label><input type="checkbox">
                         </label>
                         <span class="checkboxtext">I agree to terms & conditions</span>
-                      </div>
-                      <button type="submit" class="btn"> Register</button>
-                      <div class="login-register">
-                        <p>Already have an account?<a href="" class="login-link">Login</a></p>
-                      </div>
+                        </div>
+                        <button type="submit" class="btn"> Register</button>
+                        <div class="login-register">
+                        <p>Already have an account?<a href="login.html" class="login-link">Login</a></p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-4 justify-center mb-3">
+                            <p class="text-gray-500 text-sm">Create account with</p>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-brands fa-instagram text-lg  bg-transparent text-black"></i>
+                                <i class="fa-brands fa-linkedin text-lg  bg-transparent text-black"></i>
+                                <i class="fa-brands fa-google text-lg  bg-transparent text-black"></i>
+                                <i class="fa-brands fa-github text-lg  bg-transparent text-black"></i>
+                            </div>
+                        </div>
                     </form>
-                  </div>
+                </div>
         </div>
     </section>
-
 
     <!-- <footer>
         <div class="footer-container">
@@ -122,5 +121,4 @@
         </div>
     </footer> -->
 </body>
-
 </html>
