@@ -110,6 +110,9 @@ input{
     color: black;
     text-align: center;
 }
+.form-box h3{
+    text-align: center;
+}
 .input-box{
     position: relative;
     width: 100%;
