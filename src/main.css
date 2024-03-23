@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -25,18 +24,9 @@ section{
     margin-bottom: 30px;
     margin-top: 30px;
 }
-
-.searchbar {
+.searchbar{
     position: relative;
-    height: 30px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    padding-left: 30px;
-    border: none;
-    outline: none;
+    height: 35px;
 }
 
 .searchbar i {
