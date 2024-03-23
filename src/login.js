@@ -6,7 +6,6 @@ document.getElementById("helpform").addEventListener("submit", function(event) {
     var password = document.getElementById("password").value;
     var termsChecked = document.getElementById("checkbbox").checked;
 
-    // You can replace this with your own validation logic
     if ( validateEmail(email) && validatePassword(password) && termsChecked) {
         alert("Login Sucessful!");
         window.location.href = "index.html";

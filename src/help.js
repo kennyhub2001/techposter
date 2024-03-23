@@ -5,8 +5,6 @@ document.getElementById("helpform").addEventListener("submit", function(event) {
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
-
-    // You can replace this with your own validation logic
     if (validateUsername(username) && validateEmail(email) && validatePassword(password) && validateMessage(message)) {
         alert("Message sent!");
         // Here you can redirect to another page or do other actions after successful login
