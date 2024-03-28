@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CV | TechPoster</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="new.css">
+    <script src="https://kit.fontawesome.com/b052718160.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="flex items-center justify-between">
+
+        <div class="logo">
+            <h1>
+                <a href="index.html">TECHPOSTER</a>
+            </h1>
+        </div>
+        <div class="second-nav reveal">
+            <div class="links">
+                <a href="index.html">Home <i class="fa-solid fa-house-user"></i></a>
+            </div>
+        </div>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" onclick="showSubMenu()"></i>
+        </div>
+
+    </nav>
+    <div class="container2">
+        <form action="#" id="helpform">
+            <h1>Your Details</h1>
+            <input type="text" id="firstname" placeholder="First Name" required>
+            <input type="text" id="surname" placeholder="Surname" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="number" placeholder="Phone Number" required>
+            <input type="number" id="expirience" placeholder="Number of years of Experience" required>
+            <input type="text" id="ITcategory" list="type"  placeholder="IT Category"required>
+            <datalist id="type">
+                <option>S/W Development</option>
+                <option>Cyber Security</option>
+                <option>H/W Management</option>
+                <option>AI & Robotics</option>
+                <option>Data Science</option>
+                <option>Telecommunication</option>
+                <option>Networking</option>
+            </datalist>
+            <TEXtarea id="message" placeholder="Education Levels"></TEXtarea>
+            <TEXtarea id="message" placeholder="Skills and Certifications"></TEXtarea>
+            <input type="submit" id="button" value="SUBMIT" required>
+            <div class="login-register">
+                <p>Don't have an account?<a href="register.html" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        src="#"
+    </script>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact">
+                <p>Email<i class="fa-solid fa-envelope"></i>: techposter@gmail.com</p>
+                <p>Phone Number <i class="fa-solid fa-phone"></i>: +254759321026</p>
+            </div>
+            <div class="socials">
+                <p>Instagam <i class="fa-brands fa-instagram"></i></p>
+                <p>Twitter <i class="fa-brands fa-x-twitter"></i></p>
+                <p>LinkedIn <i class="fa-brands fa-linkedin"></i></p>
+                <p>Pinterest <i class="fa-brands fa-pinterest"></i></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>&copy;Techposter Inc.2024 <br> All Rights Reserved</small>
+        </div>
+    </footer>
+</body>
+</html>
