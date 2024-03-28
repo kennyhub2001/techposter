@@ -303,7 +303,7 @@ input[type=checkbox]{
     transition: .5s;
     color: #fff;
 }
-.container form #button:hover{
+.container2 form #button:hover{
     background: rgb(0, 0, 0);
     transition: .5s ease-in-out;
 }
